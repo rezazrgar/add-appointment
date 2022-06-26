@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./search.css";
 import { BiSearch, BiArrowToBottom, BiCheck } from "react-icons/bi";
 
-const DropDown = () => {
+const DropDown = ({ toggleSort }) => {
+  if (!toggleSort) {
+    return null;
+  }
   return (
     <div className="drop-down">
       <div
@@ -32,17 +35,25 @@ const DropDown = () => {
 };
 
 const Search = () => {
+  let [toggleSort, setToggleSort] = useState(false);
   return (
     <div className="search">
       <div className="search-icon-div">
         <BiSearch />
       </div>
       <input className="search-input-div" placeholder="Search"></input>
-      <button className="search-button-div">
+      <button
+        className="search-button-div"
+        aria-haspopup="true"
+        aria-expanded="true"
+        onClick={() => {
+          setToggleSort(!toggleSort);
+        }}
+      >
         <span>Sort By</span>
         <BiArrowToBottom />
       </button>
-      <DropDown />
+      <DropDown toggleSort={toggleSort} />
     </div>
   );
 };

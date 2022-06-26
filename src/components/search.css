@@ -31,9 +31,9 @@
 
 .search-button-div {
   width: 8%;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: white;
-  background-color: rgb(20, 20, 244);
+  background-color: rgb(57, 57, 250);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: none;
@@ -46,8 +46,9 @@
   margin-right: 5px;
 }
 .search-button-div:hover {
-  font-size: 1.14rem;
+  font-size: 1.14\rem;
   width: 8.2%;
+  cursor: pointer;
 }
 .search-input-div:focus {
   outline: none;

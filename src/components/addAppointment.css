@@ -89,11 +89,31 @@
 }
 
 .radius-top {
-  border-top-left-radius: 5px;   
+  border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: none;
 }
 .radius-all {
   border-radius: 5px;
   border: none;
+}
+.add-appointment-submit-button {
+  background-color: rgb(38, 38, 247);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+.add-appointment-submit-button:hover {
+  width: 100px;
+  cursor: pointer;
+  background-color: green;
 }

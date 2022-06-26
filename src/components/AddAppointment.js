@@ -57,6 +57,9 @@ const AddAppointment = () => {
               placeholder="Detailed comments about the condition"
             ></textarea>
           </div>
+          <button type="submit" className="add-appointment-submit-button">
+            Submit
+          </button>
         </div>
       )}
     </section>
