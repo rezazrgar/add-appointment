@@ -81,7 +81,9 @@
   justify-content: space-between;
   color: rgb(110, 109, 109);
 }
-
+.menu-item:hover {
+  cursor: pointer;
+}
 .border {
   border-top: 1px solid rgb(110, 109, 109, 0.6);
 }

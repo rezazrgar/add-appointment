@@ -2,12 +2,16 @@ import React from "react";
 import "./appointmentInfo.css";
 import { BiTrash } from "react-icons/bi";
 
-const AppointmentInfo = ({ appointment }) => {
+const AppointmentInfo = ({ appointment, onDeleteAppointment }) => {
   return (
     <div>
       <li className="show-appointment">
         <div className="left-side">
-          <button type="button" className="show-appointment-delete-button">
+          <button
+            type="button"
+            className="show-appointment-delete-button"
+            onClick={() => onDeleteAppointment(appointment.id)}
+          >
             <BiTrash />
           </button>
           <div className="show-appointemnt-content">
